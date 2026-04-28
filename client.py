@@ -2,7 +2,7 @@
     import argparse
     import socket
     from datetime import datetime
-    from dme_ra import RicartAgrawalaDME
+    from dme_ra import DME
 
 
     def server_send(server_ip: str, server_port: int, payload: str) -> str:
@@ -42,7 +42,7 @@
     def main():
         args = parse_args()
 
-        dme = RicartAgrawalaDME(
+        dme = DME(
             self_id=args.id,
             listen_port=args.listen_port,
             peer_id=args.peer_id,
