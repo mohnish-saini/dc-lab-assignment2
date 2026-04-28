@@ -4,16 +4,6 @@ import threading
 
 
 class DME:
-    """
-    Distributed mutual exclusion using Ricart–Agrawala algorithm.
-    Fully distributed (no central lock server).
-    Designed for 2 clients (Node-2 and Node-3).
-
-    Message formats:
-      REQUEST <ts> <sender>
-      REPLY   <ts> <sender>
-    """
-
     def __init__(self, self_id: str, listen_port: int, peer_id: str, peer_ip: str, peer_port: int):
         self.self_id = self_id
         self.listen_port = listen_port
