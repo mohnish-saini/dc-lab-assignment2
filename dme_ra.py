@@ -3,7 +3,7 @@ import socket
 import threading
 
 
-class RicartAgrawalaDME:
+class DME:
     """
     Distributed mutual exclusion using Ricart–Agrawala algorithm.
     Fully distributed (no central lock server).
